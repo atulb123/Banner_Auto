@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel test suite]" parallel="tests">
+  <test name="Internet Explorer Test(failed)" parallel="tests">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="tests.ParallelTest">
+        <methods>
+          <include name="startTime"/>
+          <include name="findBannerLength"/>
+          <include name="TestCase_ALL" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.ParallelTest -->
+    </classes>
+  </test> <!-- Internet Explorer Test(failed) -->
+  <test name="Chrome Test(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="tests.ParallelTest">
+        <methods>
+          <include name="startTime"/>
+          <include name="findBannerLength"/>
+          <include name="TestCase_ALL" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.ParallelTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="tests.ParallelTest">
+        <methods>
+          <include name="startTime"/>
+          <include name="findBannerLength"/>
+          <include name="TestCase_ALL" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.ParallelTest -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->
